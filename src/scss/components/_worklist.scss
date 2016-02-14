@@ -1,11 +1,55 @@
 .Worklist {
-  .Worklist-heading {
+  @include link-no-underscore;
+
+  &:hover > .Worklist-item > .Worklist-item-title,
+  &:hover > .Worklist-item > .Worklist-item-actions, {
     color: $gray;
   }
-  
-  .Worklist-item {
-    padding-top: 15px;
-    padding-bottom: 15px;
+
+  > .Worklist-heading {
+    color: $gray;
+  }
+
+  > .Worklist-item {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-bottom: 1px solid $gray;
+  }
+
+  > .Worklist-item > .Worklist-item-title {
+    @include text-ellipsis;
+    display: flex;
+    width: 40%;
+    color: $black;
+  }
+
+  > .Worklist-item > .Worklist-item-description {
+    @include text-ellipsis;
+    width: 50%;
+    color: $gray;
+  }
+
+  > .Worklist-item > .Worklist-item-actions {
+    display: flex;
+    justify-content: flex-end;
+    width: 10%;
+    color: $black;
+  }
+
+  > .Worklist-item > .Worklist-item-title > h4,
+  > .Worklist-item > .Worklist-item-description > h4 {
+    margin: 0;
+  }
+
+  > .Worklist-item > .Worklist-item-title,
+  > .Worklist-item > .Worklist-item-actions {
+    transition: all 0.2s ease;
+  }
+
+  > .Worklist-item:hover > .Worklist-item-title,
+  > .Worklist-item:hover > .Worklist-item-actions {
+    color: $black;
   }
 }
