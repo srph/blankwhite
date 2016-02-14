@@ -1,0 +1,31 @@
+{
+  "name": "blankwhite",
+  "version": "1.0.0",
+  "description": "A minimalistic portfolio useful for developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/metalsmith",
+    "start": "./node_modules/.bin/metalsmith-start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srph/blankwhite.git"
+  },
+  "author": "Kier Borromeo <seraphipod@gmail.com> (http://srph.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srph/blankwhite/issues"
+  },
+  "homepage": "https://github.com/srph/blankwhite#readme",
+  "dependencies": {
+    "metalsmith": "^2.1.0",
+    "metalsmith-autoprefixer": "^1.1.0",
+    "metalsmith-clean-css": "^2.0.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-sass": "^1.3.0",
+    "metalsmith-serve": "0.0.7",
+    "metalsmith-start": "^2.0.1",
+    "metalsmith-watch": "^1.0.1"
+  }
+}

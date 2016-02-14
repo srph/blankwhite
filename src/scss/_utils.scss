@@ -1,0 +1,22 @@
+@mixin clearfix() {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin link-no-underscore() {
+  &, &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin vertical-rhythm() {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+@mixin montserrat() {
+  font-family: "Montserrat", "Muli", sans-serif;
+}

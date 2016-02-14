@@ -1,0 +1,57 @@
+.Navbar {
+  @include clearfix;
+  @include montserrat;
+  margin-bottom: 50px;
+  height: 60px;
+  border-bottom: 1px solid $gray;
+
+  .Navbar-logo {
+    @include link-no-underscore;
+    float: left;
+    display: block;
+    height: 60px;
+    line-height: 59px;
+    color: $green;
+    text-transform: uppercase;
+  }
+
+  .Navbar-links {
+    @include clearfix;
+    float: right;
+  }
+
+  .Navbar-links > a {
+    @include link-no-underscore;
+    // Contain bottom lining
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    height: 60px;
+    line-height: 59px;
+    color: $gray;
+    text-transform: uppercase;
+    transition: 0.1s all;
+  }
+
+  .Navbar-links > a.--active,
+  .Navbar-links > a:hover, {
+    color: $black;
+  }
+
+  .Navbar-links > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background: $green;
+    transition: 0.2s width ease;
+  }
+
+  .Navbar-links > a.--active::after {
+    width: 100%;
+  }
+}

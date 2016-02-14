@@ -1,0 +1,22 @@
+{
+	"metadata": {
+		"title": "Blankwhite",
+		"description": "A minimalistic portfolio useful for developers"
+	},
+	"plugins": {
+		"metalsmith-markdown": {},
+		"metalsmith-sass": {
+			"outputDir": "css/",
+			"sourceMap": true,
+			"sourceMapContents": true
+		},
+		"metalsmith-autoprefixer": {},
+		"metalsmith-serve": {
+			"port": 8080,
+			"verbose": true
+		},
+		"metalsmith-watch": {
+			"livereload": true
+		}
+	}
+}

@@ -1,0 +1,18 @@
+h1, h2, h3, h4, h5, h6, p {
+  @include vertical-rhythm;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include montserrat;
+  text-transform: uppercase;
+}
+
+a {
+  color: $green;
+  text-decoration: none;
+
+  &:hover {
+    color: $greenDark;
+    text-decoration: initial;
+  }
+}

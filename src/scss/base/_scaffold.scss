@@ -1,0 +1,30 @@
+* {
+  // antialias
+  // https://github.com/mashupgarage/mashupgarage.com/blob/gh-pages/assets/sass/base/_antialias.scss
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $black;
+}
+
+.Container {
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 998px;
+}
+
+.u-size480 {
+  width: 100%;
+  max-width: 480px !important;
+}
