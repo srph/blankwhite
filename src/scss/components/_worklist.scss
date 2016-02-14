@@ -1,5 +1,7 @@
 .Worklist {
   @include link-no-underscore;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   &:hover > .Worklist-item > .Worklist-item-title,
   &:hover > .Worklist-item > .Worklist-item-actions, {
