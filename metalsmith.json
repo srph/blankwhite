@@ -1,4 +1,6 @@
 {
+	"source": "_site",
+	"destination": "_build",
 	"metadata": {
 		"title": "Blankwhite",
 		"description": "A minimalistic portfolio useful for developers"
@@ -15,8 +17,9 @@
 			"port": 8080,
 			"verbose": true
 		},
-		"metalsmith-watch": {
-			"livereload": true
+		"metalsmith-layouts": {
+			"engine": "handlebars",
+			"directory": "_layouts"
 		}
 	}
 }
